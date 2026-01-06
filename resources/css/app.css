@@ -1,0 +1,29 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply antialiased text-zinc-900 bg-zinc-50 min-h-screen font-sans;
+    }
+
+    p {
+        @apply opacity-70 leading-loose;
+    }
+}
+
+@layer components {
+    .w-content {
+        @apply w-full max-w-7xl mx-auto px-8;
+    }
+
+    .border-primary {
+        @apply border border-zinc-200;
+    }
+
+    .link {
+        @apply font-semibold text-primary-600 hover:text-primary-700;
+    }
+}
